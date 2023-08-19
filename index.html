@@ -7,13 +7,79 @@
     
 <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'black-primary':'#111',
+            'btn-color' : '#E527B2',
+            'grey-primary':'#11111180',
+            'white-primary': '#FFF',
+            'prod-bg' : '#1111110D',
+          }
+        }
+      }
+    }
+  </script>
+
+
+<style>
+    .font-work{
+        font-family: 'Work Sans', sans-serif;
+    }
+</style>
 </head>
 <body>
-    <div>
-        <h1 class="">Summer sale </h1>
-    <h3>summer </h3>
-    <h3>summer </h3>
-    <h3>summer </h3>
-    </div>
+    <header class="bg-[#F9F6E2]">
+        <section class="container mx-auto flex justify-between items-center gap-12">
+            <div>
+                <p class="text-2xl text-center mb-11 text-black-primary">---SALE FEVER---</p>
+                <h2 class="mb-20 text-6xl font-bold font-work">Purchase TK 200 or <br> above & get <span class="text-btn-color">20% off</span></h2>
+                <div class="flex justify-center gap-4 items-center">
+                    <p class="text-3xl">Use Promo Code</p>
+                    <button class="px-6 py-4 bg-btn-color rounded-lg text-2xl font-normal font-work text-white-primary">SELL200</button>
+                </div>
+            </div>
+
+            <div class="my-20">
+                <img src="./images/Summer 1.png" alt="">
+            </div>
+        </section>
+    </header>
+
+    <main class="bg-[#F8F8F8]">
+        <section class="container mx-auto py-32">
+            <div class="grid">
+                <!-- first card -->
+                <h3 class="mb-8 text-4xl text-black-primary font-work font-semibold">Kitchenware</h3>
+                <div class="card w-96 p-5 bg-base-100 shadow-xl">
+                    <figure class="px-24 py-8 bg-prod-bg">
+                      <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          </div>
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>    
+    </main>
 </body>
 </html>
