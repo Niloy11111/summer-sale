@@ -40,11 +40,11 @@
     <header class="bg-[#F9F6E2]">
         <section class="container mx-auto flex justify-between items-center gap-12">
             <div>
-                <p class="text-2xl text-center mb-11 text-black-primary">---SALE FEVER---</p>
+                <p class="text-2xl font-word font-medium text-center mb-11 text-black-primary">---SALE FEVER---</p>
                 <h2 class="mb-20 text-6xl font-bold font-work">Purchase TK 200 or <br> above & get <span class="text-btn-color">20% off</span></h2>
                 <div class="flex justify-center gap-4 items-center">
                     <p class="text-3xl">Use Promo Code</p>
-                    <button class="px-6 py-4 bg-btn-color rounded-lg text-2xl font-normal font-work text-white-primary">SELL200</button>
+                    <button class="px-6 py-4 bg-btn-color rounded-lg text-2xl font-semibold font-work text-white-primary">SELL200</button>
                 </div>
             </div>
 
@@ -54,32 +54,163 @@
         </section>
     </header>
 
+   
     <main class="bg-[#F8F8F8]">
-        <section class="container mx-auto py-32">
-            <div class="grid">
-                <!-- first card -->
+        <section class="mx-60 py-32">
+
+            <div class="flex justify-between gap-6">
+
+               <div class="w-[1500px]">
                 <h3 class="mb-8 text-4xl text-black-primary font-work font-semibold">Kitchenware</h3>
-                <div class="card w-96 p-5 bg-base-100 shadow-xl">
-                    <figure class="px-24 py-8 bg-prod-bg">
-                      <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          </div>
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                <div class="grid grid-cols-3 gap-6">
+                    <!-- first card -->
+                    <div onclick="setAppendText(this)" class="card p-5 bg-white-primary">
+                        <figure class="px-24 py-8 bg-prod-bg">
+                          <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h3 class="mt-2 text-xl text-black-primary font-semibold font-work">K. Accessories</h3>
+                          <p class="mt-2 text-grey-primary text-xl font-normal font-work">39.00 TK</p>
+                        </div>
                       </div>
+                    <!-- second card -->
+                    <div onclick="setAppendText(this)" class="card p-5 bg-white-primary">
+                        <figure class="px-24 py-8 bg-prod-bg">
+                          <img src="/images/prod2.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h3 class="mt-2 text-xl text-black-primary font-semibold font-work">K. Accessories</h3>
+                          <p class="mt-2 text-grey-primary text-xl font-normal font-work">39.00 TK</p>
+                        </div>
+                      </div>
+                    <!-- third card -->
+                    <div onclick="setAppendText(this)" class="card p-5 bg-white-primary">
+                        <figure class="px-24 py-8 bg-prod-bg">
+                          <img src="/images/prod3.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h3 class="mt-2 text-xl text-black-primary font-semibold font-work">Home Cooker</h3>
+                          <p class="mt-2 text-grey-primary text-xl font-normal font-work">49.00 TK</p>
+                        </div>
+                      </div>
+    
+                      
+                </div>
+    
+                 <h3 class="mt-14 mb-8 text-4xl text-black-primary font-work font-semibold">Sportswear</h3>
+                <div class="grid grid-cols-3 gap-6">
+                    <!-- fourth card -->
+                    <div onclick="setAppendText(this)" class="card p-5 bg-white-primary">
+                        <figure class="px-24 py-8 bg-prod-bg">
+                          <img src="/images/prod4.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h3 class="mt-2 text-xl text-black-primary font-semibold font-work">Sports Back Cap</h3>
+                          <p class="mt-2 text-grey-primary text-xl font-normal font-work">49.00 TK</p>
+                        </div>
+                      </div>
+                    <!-- fifth card -->
+                    <div onclick="setAppendText(this)" class="card p-5 bg-white-primary">
+                        <figure class="px-24 py-8 bg-prod-bg">
+                          <img src="/images/prod5.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h3 class="mt-2 text-xl text-black-primary font-semibold font-work">Full Jersey Set</h3>
+                          <p class="mt-2 text-grey-primary text-xl font-normal font-work">69.00 TK</p>
+                        </div>
+                      </div>
+                    <!-- sixth card -->
+                    <div onclick="setAppendText(this)" class="card p-5 bg-white-primary">
+                        <figure class="px-24 py-8 bg-prod-bg">
+                          <img src="/images/prod6.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h3 class="mt-2 text-xl text-black-primary font-semibold font-work">Sports cates</h3>
+                          <p class="mt-2 text-grey-primary text-xl font-normal font-work">159.00 TK</p>
+                        </div>
+                      </div>
+    
+                      
+                </div>
+    
+               </div>
+
+                <div class="mt-16 second-div">
+
+                    <div class="have pt-6 pr-6 pl-6 pb-6 bg-white-primary rounded-lg">
+                        <h4 class="mb-4 text-2xl text-black-primary font-medium font-work">Have coupon?</h4>
+
+                    <div class="flex  bg-white-primary border border-[#11111126] rounded-lg">
+
+                    <input id="coupon-field" type="text" placeholder="Coupon code" class="text-xl font-normal font-work outline-none ml-4 w-[180px]"/>
+                     <button id="btn-apply" disabled class="px-6 py-4 bg-btn-color rounded-r-lg text-2xl font-semibold font-work text-white-primary"> Apply </button>
                     </div>
+                </div>
+
+
+                <div class="totalPrice p-6 pb-16 rounded-lg space-y-4 mt-6 bg-white-primary">
+                  <div id="append-div">
+
                   </div>
+
+                  <h4 class="border-t border-[#11111126] pt-3 text-2xl text-black-primary font-work font-medium">Total price: <span class="text-grey-primary"><span id="total-Price">000.00</span>TK</span></h4>
+                  <h4 class="text-2xl text-black-primary font-work font-medium">Discount : <span class="text-grey-primary"><span id="discount-element">00.00</span>TK</span> </h4>
+                  <h4 class="border-b border-[#11111126] pb-6 text-2xl text-black-primary font-work font-medium">Total: <span class="text-grey-primary"><span id="totalAfterDiscount">000.00</span>TK</span></h4>
+                </div>
+
+                <div class="flex justify-center">
+                  <button id="btn-purchase" class="py-4 px-20 bg-btn-color rounded-lg text-white-primary text-work text-xl font-semibold" disabled>Make Purchase</button>
+                </div>
+     
             </div>
+            
+
         </section>    
     </main>
+
+
+    <script src="js/blog.js"></script>
 </body>
 </html>
