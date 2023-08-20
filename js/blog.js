@@ -44,6 +44,7 @@ function setTotalPrice(productPrice){
         const couponFieldValue = couponField.value ;
 
         if(couponFieldValue === 'SELL200'){
+            
         const discountElement = document.getElementById('discount-element');
         const totalDiscount = currentTotalAmount * 0.20 ;
         discountElement.innerText = totalDiscount.toFixed(2);
@@ -52,7 +53,28 @@ function setTotalPrice(productPrice){
         const currentAfterDiscount = currentTotalAmount - totalDiscount ; 
 
         afterDiscountElement.innerText = currentAfterDiscount.toFixed(2) ; 
+       
         }
+    })
+
+    document.getElementById('go-home').addEventListener('click', function(){
+        const productName = document.getElementById('append-div');
+        productName.innerHTML = '' ;
+
+        const totalPriceElement = document.getElementById('total-Price');
+        totalPriceElement.innerText = '000.00' ;
+
+        const afterDiscountElement = document.getElementById('totalAfterDiscount') ;
+        afterDiscountElement.innerText = '000.00' ;
+
+        const discountElement = document.getElementById('discount-element');
+        discountElement.innerText = '00.00' ;
+
+        const deleteButton = document.getElementById('btn-purchase');
+        deleteButton.disabled = true ;
+
+        const applyButton = document.getElementById('btn-apply');
+        applyButton.disabled = true ;
     })
 }
 
