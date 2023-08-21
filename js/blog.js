@@ -7,8 +7,11 @@ function setAppendText(target){
 
     const productName = document.getElementById('append-div');
 
+    const count = productName.childElementCount ;
+
     const ol = document.createElement('ol');
-    ol.innerText = productTitle ;
+    
+    ol.innerHTML = `${count + 1} ${productTitle}  `
     ol.classList.add('mt-2','text-xl','text-black-primary','font-semibold','font-work');
     productName.appendChild(ol);  
     
@@ -75,6 +78,9 @@ function setTotalPrice(productPrice){
 
         const applyButton = document.getElementById('btn-apply');
         applyButton.disabled = true ;
+
+        const couponField = document.getElementById('coupon-field');
+        couponField.value = '' ;
     })
 }
 
